@@ -1,0 +1,48 @@
+
+body{
+    background-color: black;
+}
+
+.logIn{
+    position: fixed;
+    left: 35vw;
+    top: 25%;
+    height: 150px;
+    width: 300px;
+    background-color: white;
+    border: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+}
+
+.Usuario{
+    position: fixed;
+    top: 25%;
+}
+
+.Contraseña{
+    position: fixed;
+    top: 30%;
+}
+
+.boton{
+    border-radius: 15px;
+    background-color: blueviolet;
+    color: wheat;
+}
+
+.boton:hover{
+    background-color: violet;
+}
+
+.b1{
+    position: fixed;
+    top: 40%;
+
+}
+
+.b2{
+    position: fixed;
+    top: 35%;
+}
