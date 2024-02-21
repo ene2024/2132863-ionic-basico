@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="StylesP3.css">
     
-    <title>Document</title>
+    <title>Carrito de compras</title>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
 <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
@@ -17,11 +17,11 @@
         </ion-toolbar>
       </ion-header>
       <ion-content class="ion-padding">
-        <h1>Content</h1>
+        <h1>Ticket de venta Práctica 4</h1>
 
         <ion-list id="lista">
             <ion-item id="Tipo">
-                <ion-input id="type" label="Tipo de gasto" placeholder="Ingresa tipo"></ion-input>
+                <ion-input id="type" label="Producto" placeholder="Ingresa producto"></ion-input>
             </ion-item>
     
             <ion-item id="Precio">
@@ -30,6 +30,11 @@
         </ion-list> 
 
         <ion-button color="success" id="boton">Registrar</ion-button>
+
+        <div id="ticket">
+           <div id="costos">Total a pagar: 0</div> 
+        </div>
+
       </ion-content>
 
       <script src="ScriptP3.js"></script>

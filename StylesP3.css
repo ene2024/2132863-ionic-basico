@@ -14,6 +14,14 @@ ion-title{
     font-size: 28px;
 }
 
+#ticket{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
 #logIn{
     position: fixed;
     left: 35vw;

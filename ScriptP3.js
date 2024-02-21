@@ -27,15 +27,19 @@ function SignIn()
 
 var tipo = [];
 var precio = [];
+var total = 0;
 
 var boton = document.getElementById("boton");
 
-boton.addEventListener("click", guardar, limpiar);
+boton.addEventListener("click", guardar);
+boton.addEventListener("click", limpiar);
+boton.addEventListener("click", suma);
+boton.addEventListener("click", productos);
 
 function guardar()
 {
-    tipo.push(document.getElementById("type"));
-    precio.push(document.getElementById("precio"));
+    tipo.unshift(document.getElementById("type").value);
+    precio.unshift(parseInt(document.getElementById("price").value));
 }
 
 function limpiar()
@@ -43,6 +47,25 @@ function limpiar()
     document.getElementById('type').value = '';
     document.getElementById('price').value = '';
 }
+
+function suma(){
+    total = total + precio[0];
+    var totalPagar = document.getElementById("costos");
+    totalPagar.innerHTML = "Total a pagar $" + total;
+}
+
+function productos(){
+
+    var product = tipo[0];
+    var cash = precio[0];
+    var benzema = document.createElement("div");
+
+    benzema.innerHTML = product + "........." + "$" + cash;
+    var padre = document.getElementById("costos");
+    padre.appendChild(benzema);
+
+}
+
 
 
 
