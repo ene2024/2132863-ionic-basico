@@ -4,21 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="StylesP3.css">
-    <script src="ScriptP3.js"></script>
+    
     <title>Document</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
 </head>
 <body>
-    <div class="logIn">
-        <div class="Usuario">
-            <label for="User">Usuario</label>
-            <input type="text" name="User" id="User">
-        </div>
-        <div class="Contraseña">
-            <label for="Password">Contraseña</label>
-            <input type="text" name="Password" id="Password">
-        </div>
-        <button type="submit"  onclick="LogIn()" class="boton b1">Iniciar Sesion</button>
-        <button type="submit" onclick="SignIn()" class="boton b2">Registrarse</button>
-    </div>
+    <ion-header>
+        <ion-toolbar>
+          <ion-title>Presupuesto</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+        <h1>Content</h1>
+
+        <ion-list id="lista">
+            <ion-item id="Tipo">
+                <ion-input id="type" label="Tipo de gasto" placeholder="Ingresa tipo"></ion-input>
+            </ion-item>
+    
+            <ion-item id="Precio">
+                <ion-input id="price" label="Precio" type="number" placeholder="Ingresa el precio"></ion-input>
+            </ion-item>
+        </ion-list> 
+
+        <ion-button color="success" id="boton">Registrar</ion-button>
+      </ion-content>
+
+      <script src="ScriptP3.js"></script>
 </body>
 </html>
