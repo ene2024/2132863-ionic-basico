@@ -69,3 +69,10 @@ ion-title{
     height: fit-content;
 }
 
+ion-col{
+    background-color: tomato;
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+    text-align: center;
+}

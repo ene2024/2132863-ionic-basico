@@ -58,7 +58,7 @@ function productos(){
 
     var product = tipo[0];
     var cash = precio[0];
-    var benzema = document.createElement("div");
+    var benzema = document.createElement("p");
 
     benzema.innerHTML = product + "........." + "$" + cash;
     var padre = document.getElementById("costos");
