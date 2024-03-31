@@ -11,4 +11,25 @@ export class HomePage {
 
   alumnos = ["Carlos", "Ximena", "Alberto", "Eduardo", "Barbara", "Georgina", "Kevin"];
 
+  isActionSheetOpen = false;
+  
+  public actionSheetButtons = [
+    {
+      text: 'Delete',
+      role: 'destructive',
+      data: {
+        action: 'delete',
+      }
+    },
+    {
+      text: 'Cancel',
+      role: 'cancel',
+      data: {
+        action: 'cancel',
+      }
+    },
+  ]
+
+  setOpen(isOpen: boolean) {
+    this.isActionSheetOpen = isOpen;}
 }
