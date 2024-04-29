@@ -1,13 +1,19 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Práctica 9 Diego Adrián Moreno Duarte
+      Práctica 10 Diego Adrián Moreno Duarte
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-list *ngFor="let porducto of productos">
+  <div id="producto" *ngFor="let producto of productos">
+    <ion-card>
+      <ion-title>{{producto.title}}</ion-title> 
+      <img src="{{producto.image}}" style="height: 250px; width: 200px;">
+      <br><br>
+      <a style="font-size: large;" [routerLink]="['/productoDetalle', producto.id]">Detalles</a>
 
-  </ion-list>
+    </ion-card>
+  </div>
 </ion-content>

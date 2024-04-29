@@ -10,4 +10,8 @@ export class ConsultaService {
   constructor(private http: HttpClient) {}
 
   getProductos() {    return this.http.get('https://fakestoreapi.com/products')}
+
+  getProductoDetalle(idProducto: String) { 
+    return this.http.get("https://fakestoreapi.com/products/" + idProducto)
+  }
 }

@@ -14,9 +14,13 @@ export class ProductosComponent  implements OnInit {
 
   productos: any[] = [];
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.obtenerProductos();
+  }
 
   obtenerProductos(): void{ this.consulta.getProductos().subscribe((resp: Object) => { console.log(resp); this.productos = resp as any[];  })};
 
+  
+  
 
 }

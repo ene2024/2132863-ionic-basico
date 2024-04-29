@@ -1,0 +1,11 @@
+ion-card{
+    height: 400px;
+    width: 350px;
+}
+
+#producto{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    gap: 20px;
+}
