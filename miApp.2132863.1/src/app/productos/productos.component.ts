@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ConsultaService } from '../consulta.service';
+import { ConsultaService } from '../Servicios/consulta.service';
 
 
 
