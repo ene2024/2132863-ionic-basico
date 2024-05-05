@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { alumno } from '../alumno.model';
+import { alumno } from '../model/alumno.model';
 import { FormsModule } from '@angular/forms';
 
 @Component({
